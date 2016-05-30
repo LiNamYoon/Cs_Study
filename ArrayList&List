@@ -1,0 +1,38 @@
+ArrayList arrayList = new ArrayList();  //ArrayList를 사용하기 위해서 상위에 using System.Collections; 선언해야 한다.
+            arrayList.Add(0);
+            arrayList.Add(1);
+            arrayList.Add(3);
+
+            arrayList.Insert(2, 2);
+
+            arrayList.Remove(2); // 결과값 2를 제거
+            arrayList.RemoveAt(2); // 인덱스 2의 값을 제거
+
+            /*
+            arrayList[0]; // 0
+            arrayList[1]; // 1
+            arrayList[2]; // 3
+            */
+
+            int sum = 0;
+
+            for (int index = 0; index < arrayList.Count; index++)
+            {
+                int num =  (int)arrayList[index]; //같은 데이터형식의 함께 배열하기 위하 ArrayList 결과 값이 Objet로 나오기 때문에 (int)로 형변환을 해야한다.(속도 저하) 
+                sum += num;
+            }
+
+            int[] intArray = new int[5];            // 인트형 배열
+            ArrayList arrayList = new ArrayList();  // objet 리스트
+            List<int> intlist = new List<int>();    // List <T>  "T"에 어떠한 데이터 형식을 사용해도 상관없다.[일반화 컬렉션(제너럴컬렉션)]
+
+            intlist.Add(1);
+            intlist.Add(2);
+            intlist.Add("Hi"); //데이터 형식이 int로 고정되어 있기때문에 다른 데이터 형식을 저장할 수 없다.
+
+            int sum2 = 0;
+            for (int index = 0; index < intlist.Count; index++)
+            {
+                int value = intlist[index]; // 형변환이 필요 없다 (속도 상향)
+                sum2 += value;
+            }
