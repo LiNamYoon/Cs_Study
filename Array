@@ -1,0 +1,35 @@
+            //배열의 표현 방법 3가지
+            int numberOne = 1;
+            
+            // 첫번째 배열 표현방식 (나중에 데이터를 삽입하는 방식) 
+            int[] numberArray = new int[5];
+            numberArray[0] = 1;
+            numberArray[1] = 2;
+            numberArray[2] = 3;
+            numberArray[3] = 4;
+            numberArray[4] = 5;
+
+            // 두번째 배열 표현방식( 아래의 방식과 동일해 사용빈도 적음)
+            int[] numberArray2 = new int[] { 1, 2, 3, 4, 5, 6 };
+
+            // 세번째 배열 표현방식 (처음부터 데이터를 삽입하는 방식)
+            int[] numberArray3 = { 1, 2, 3, 4, 5 };
+
+
+            // 클래스 배열 표현방식 예시
+            DateAnimal animalOne;
+
+            // 첫번째 표현방식
+            DateAnimal[] animalArray = new DateAnimal[5];
+            animalArray[0] = new DateAnimal("이남", "윤", new DateTime(1989, 3, 18));
+
+            // 두번쨰 표현방식
+            DateAnimal[] animalArray2 =
+            {
+                new DateAnimal("이남", "윤", new DateTime(1989, 3, 18)),
+                new DateAnimal("이남", "윤", new DateTime(1989, 3, 18)),
+                new DateAnimal("이남", "윤", new DateTime(1989, 3, 18)),
+                new DateAnimal("이남", "윤", new DateTime(1989, 3, 18)),
+                new DateAnimal("이남", "윤", new DateTime(1989, 3, 18))
+
+            };
