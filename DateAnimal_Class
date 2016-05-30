@@ -1,0 +1,53 @@
+    class DateAnimal
+    {
+
+        public string FirstName;
+        public string LastName;
+
+        private DateTime _Brithday;
+               
+        private bool _Group;
+
+   
+        public string Address;
+
+        
+        public DateAnimal(string firstName, string lastName, DateTime brithday)
+        {
+            this.FirstName = firstName;
+            this.LastName = lastName;
+            this._Brithday = brithday;
+
+            this._Group = Age >= 18;
+
+        }
+
+        public DateTime brithday
+        {
+            get { return _Brithday; }
+            set                         // set 쓰기(사용하기)
+            {
+                _Brithday = value;
+                bool _Group = Age >= 18;
+
+            }
+        }
+
+        public int Age             
+        {
+            get { return DateTime.Now.Year - brithday.Year;  }   // get 읽기전용
+                              
+          
+        }
+        public bool Group
+        {
+            get { return _Group; }
+        }
+
+
+        public string FullName      // 전체 이름을 생성하는 속성화
+        {
+            get
+            { return LastName + " " + FirstName; }
+        }
+    }
