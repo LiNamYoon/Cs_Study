@@ -1,0 +1,13 @@
+            // 반복하라 (index 가 0 부터 4까지) { }
+            // for (초기식; 조건식; 증감식;) { }  초기식 실행 -> 조건식 (참) -> 코드블럭 실행->증감식 -> 조건식 (참) -> 코드블럭 실행->증감식
+
+            int sum = 0;
+            for (int index = 1; index <= 10; index = index + 1) // index ++ 동일 연잔자
+            {
+                sum = sum + index;  //sum += index; 동일 연산자
+            }
+            // 위아래 동일한 연산
+            for (int index = 1; index <= 10; index = index ++)
+            {
+                sum += index;
+            }
