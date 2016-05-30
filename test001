@@ -1,0 +1,29 @@
+    public partial class Form1 : Form
+    {
+        DateAnimal Cus = new DateAnimal("이남", "윤", new DateTime(1989,3,18));
+        // DateAnimal Class 생성을 하는 곳
+        // First Name, Last Name, Age 를 기입할 수 있다.
+
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void AddAnimal_Click(object sender, EventArgs e)
+        {
+            AddFirstName.Text = Cus.FirstName;
+            AddLastName.Text = Cus.LastName;
+            AddFullName.Text = Cus.FullName;
+        
+            AddAge.Text = Cus.Age.ToString(); //Age 는 int 형식이기 때문에 Tostring 으로 변환시켜준다.
+
+            // 닷 연산를 이용해서 간편한게 출력할 데이터 입력
+
+            Cus.Address = "경기도 광명시 광명동"; //DateAnimal Class 에서 public 되어있는 객체들을 사용하여 주소 입력
+
+            AddAddress.Text = Cus.Address;
+
+            AddGroup.Text = Cus.Group.ToString();
+
+
+        }
